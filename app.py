@@ -178,7 +178,7 @@ class MainApplication(tk.Frame):
         self.canvas.bind("<Key>", self.canvasKeyCallback)
         self.canvas.bind("<Button-1>", self.canvasMouseClickCallback)
 
-        self.canvas.create_text(canvasDimensions[0]/2, canvasDimensions[1]/2, text="Please choose a package to begin...", fill="black", font=('Meriad 15 bold'))
+        self.canvas.create_text(canvasDimensions[0]/2, canvasDimensions[1]/2, text="Click here to choose package", fill="black", font=('Meriad 15 bold'))
 
 
         # # fill grid
@@ -211,7 +211,7 @@ class MainApplication(tk.Frame):
         Label(managerWin, text="Information about package:").grid(row=0, column=1, pady=(5,0))
         managerWin.columnconfigure(1, weight=1)
 
-        
+
 
 
 
